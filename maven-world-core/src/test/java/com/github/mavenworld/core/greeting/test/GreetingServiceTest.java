@@ -1,5 +1,9 @@
-package com.github.mavenworld.core.greeting;
+package com.github.mavenworld.core.greeting.test;
 
+import com.github.mavenworld.core.greeting.GreetingException;
+import com.github.mavenworld.core.greeting.GreetingMessage;
+import com.github.mavenworld.core.greeting.GreetingRepository;
+import com.github.mavenworld.core.greeting.GreetingService;
 import org.junit.jupiter.api.*;
 
 class GreetingServiceTest {
