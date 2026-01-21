@@ -61,7 +61,7 @@ class GreetingServiceTest {
 
     @Test
     void shouldThrowExceptionForNullEntity() {
-        Assertions.assertThrows(
+        Assertions.assertThrowsExactly(
                 NullPointerException.class,
                 () -> underTest.addGreetingMessage(null)
         );
@@ -69,7 +69,7 @@ class GreetingServiceTest {
 
     @Test
     void shouldThrowExceptionForNullMessage() {
-        Assertions.assertThrows(
+        Assertions.assertThrowsExactly(
                 NullPointerException.class,
                 () -> underTest.addGreetingMessage(new GreetingMessage(null))
         );
@@ -77,7 +77,7 @@ class GreetingServiceTest {
 
     @Test
     void shouldThrowExceptionForBlackMessage() {
-        Assertions.assertThrows(
+        Assertions.assertThrowsExactly(
                 GreetingException.class,
                 () -> underTest.addGreetingMessage(new GreetingMessage("   "))
         );
