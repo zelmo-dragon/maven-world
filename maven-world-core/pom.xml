@@ -14,7 +14,6 @@
     </parent>
 
     <artifactId>maven-world-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>maven-world-core</name>
